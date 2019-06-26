@@ -12,13 +12,18 @@ import org.springframework.web.servlet.ModelAndView;
 public class HomeController {
 
 	@RequestMapping("home")
-	public ModelAndView home( @RequestParam("name") String name, @RequestParam("email") String email)
+	public ModelAndView home( Developer dev)
 	{
 		ModelAndView mv = new ModelAndView();
-		mv.addObject("name", name);
-		mv.addObject("email", email);
+		mv.addObject("obj", dev);
 		mv.setViewName("home");
 		return mv;
+	}
+	
+	@RequestMapping("contact")
+	public String contact() {
+		return "contact";
+		
 	}
 	
 }

@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-Welcome ${obj.id}, ${obj.name}, ${obj.company}
+you are in contact page
 </body>
 </html>
